@@ -1,21 +1,21 @@
 
 /* 色 */
-@import 'color';
+@import 'config/color';
+@import 'config/font';
 
 /* メディアクエリ */
-@import 'mq';
-
-/* 文字 */
-@import './font';
+@import 'mixin/mq';
 
 /* ワンページスクロール */
-@import './one_page_scroll';
+@import 'vendor/onepagescroll';
 
 /* アニメーション */
-@import './animation';
+@import 'modules/animation';
 
 /* モーダル用 */
-@import './modalstyle';
+@import 'modules/modal';
+
+@import 'modules/grid';
 
 /* 標準スタイル */
 @import './style';
