@@ -1,22 +1,6 @@
 
-console.log('test');
-
-import './main.min'
+import './onepagescroll.min'
 import { showModal,centeringModal } from './modalwindow'
-// import './codepen'
-// import './script'
-
-console.log('test');
-
-/*
-const sample = new Sample({
-  elements: [ ...document.querySelectorAll('.js-target') ],
-  classNameActive: 'is-active'
-})
-setTimeout(() => {
-  sample.activate()
-}, 500)
-*/
 
 //モーダルを閉じる
 $(document).on("click", ".co-modal-overlay,#co-modal-close", function () {
