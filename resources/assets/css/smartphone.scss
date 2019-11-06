@@ -1,0 +1,43 @@
+@media screen and (max-width: 599px) {
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+  .grid-item {
+    height: 24vw;
+    width: 42vw;
+  }
+
+  .display--pc {
+    display: none;
+  }
+  .display--sp {
+    display: block;
+  }
+  .work--list-left {
+    width: 179px;
+  }
+  .image--pc {
+    width: 160px;
+    top: 43px;
+    left: 10px;
+    height: 252px;
+  }
+  .work--list-title {
+    font-size: 15px;
+  }
+  .work--list-detail {
+    font-size: 13px;
+  }
+
+  .js-box button {
+    height: 38px;
+    margin: 7px auto;
+  }
+  .js-box {
+    margin: 0;
+  }
+
+}
