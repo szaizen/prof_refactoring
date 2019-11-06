@@ -1,0 +1,39 @@
+
+/*===============================
+  2ページ目
+  プロフィールページ
+================================*/
+
+.skill__list {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+
+  li {
+    list-style: none;
+  }
+
+  i {
+    font-size: 40px;
+  }
+
+  /* icon色 */
+  .fa-html5 {
+    color: $color-icon-html;
+  }
+  .fa-css3-alt {
+    color: $color-icon-css;
+  }
+  .fa-java {
+    color: $color-icon-java;
+  }
+  .fa-salesforce {
+    color: $color-icon-salesforce;
+  }
+  .fa-js-square {
+    color: $color-icon-square;
+  }
+
+}

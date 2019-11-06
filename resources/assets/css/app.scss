@@ -6,17 +6,16 @@
 /* ワンページスクロール */
 @import 'vendor/onepagescroll';
 
-/* 色 */
-@import 'config/color';
-@import 'config/font';
+@import 'config/color'; // 色
+@import 'config/font';  // フォント
 
-/* アニメーション */
-@import 'modules/animation';
-
-/* モーダル用 */
-@import 'modules/modal';
-
-@import 'modules/grid';
+@import 'modules/animation';  // アニメーション
+@import 'modules/modal';      // モーダル用
+@import 'modules/grid';       // gridレイアウト
 
 /* 標準スタイル */
 @import './style';
+
+@import 'section/work-list';  // 1ページ目：作品集
+@import 'section/skill-list'; // 2ページ目：プロフィール
+@import 'section/study-list'; // 3ページ目：js課題集

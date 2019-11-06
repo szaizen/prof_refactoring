@@ -1,0 +1,62 @@
+
+/*===============================
+  3ページ目
+  JavaScript作品集
+================================*/
+
+.js__box {
+  text-align: center;
+  margin: 20px 0;
+
+  @include mq(mobile) {
+    margin: 0;
+  }
+
+  &__item {
+    float: left;
+    margin: 0 10px;
+
+    @include mq(tablet) {
+      float: none;
+      margin: 0 10px;
+    }
+
+    button {
+      outline: none;
+      text-decoration: none;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      height: 50px;
+      margin: 15px auto;
+      width: 210px;
+      opacity: 1;
+      background-color: $color-white;
+      border: 1px solid rgba(22, 76, 167, 0.6);
+
+      &:hover {
+        animation: rotate 0.7s ease-in-out both;
+      }
+      &:hover span {
+        animation: storm 0.7s ease-in-out both;
+        animation-delay: 0.06s;
+      }
+
+    }
+
+    span {
+      color: #164ca7;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.7px;
+    }
+
+    @include mq(mobile) {
+      height: 38px;
+      margin: 7px auto;
+    }
+  }
+}
