@@ -4,7 +4,7 @@ console.log('test');
 import './main.min'
 import { showModal,centeringModal } from './modalwindow'
 // import './codepen'
-import './script'
+// import './script'
 
 console.log('test');
 
@@ -63,8 +63,4 @@ $('.work--card-4').on('click',function(){
 
 $('.work--card-2').on('click',function(){
  showModal('','<div class="work--list-modal">  <div class="work--list-left">    <img src="assets/images/display.png" class="image--display display--pc"><img src="assets/images/display-sp.png" class="image--display display--sp">    <div class="image--pc">      <img src="assets/images/signpost.png" class="image--scroll">    </div>  </div>  <div class="work--list-right">    <p class="work--list-title">      「Signpost」／ 複業に関するメディア   </p>    <p class="work--list-detail">      URL：<a href="http://signpost.anotherworks.co.jp/" target="_blank">http://signpost.anotherworks.co.jp/</a><br>      開発人数：1名<br>      使用ツール：Wordpress<br>      開発内容：デザイン・コーディング・SEO対策・移行から運用、保守まで一人で担当<br>       開発期間：約1ヶ月半<br>    </p>  </div></div>');
-});
-
-$('.work--card-1').on('click',function(){
- showModal('','<div class="work--list-modal">  <div class="work--list-left">    <img src="assets/images/display.png" class="image--display display--pc"><img src="assets/images/display-sp.png" class="image--display display--sp">    <div class="image--pc">      <img src="assets/images/anotherworks.png" class="image--scroll">    </div>  </div>  <div class="work--list-right">    <p class="work--list-title">      「Another works」<br> LP    </p>    <p class="work--list-detail">      URL：<a href="https://aw-anotherworks.com/" target="_blank">https://aw-anotherworks.com/</a><br>      開発内容：ランディングページを作成<br>       開発期間：約3日<br>    </p>  </div></div>');
 });
