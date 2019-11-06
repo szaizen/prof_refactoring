@@ -1,9 +1,22 @@
 
+/* 色 */
 @import 'color';
-@import './one_page_scroll';
+
+/* 文字 */
 @import './font';
-@import './modalstyle';
-@import './style';
+
+/* ワンページスクロール */
+@import './one_page_scroll';
+
+/* アニメーション */
 @import './animation';
+
+/* モーダル用 */
+@import './modalstyle';
+
+/* 標準スタイル */
+@import './style';
+
+/* メディアクエリ */
 @import './tablet';
 @import './smartphone';
