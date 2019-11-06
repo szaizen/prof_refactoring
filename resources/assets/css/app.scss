@@ -1,13 +1,14 @@
 
-/* 色 */
-@import 'config/color';
-@import 'config/font';
 
 /* メディアクエリ */
 @import 'mixin/mq';
 
 /* ワンページスクロール */
 @import 'vendor/onepagescroll';
+
+/* 色 */
+@import 'config/color';
+@import 'config/font';
 
 /* アニメーション */
 @import 'modules/animation';

@@ -1,1 +1,64 @@
 
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 22px;
+
+  &__item {
+    background-color: $color-white;
+    height: 12vw;
+    width: 19vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    cursor: pointer;
+
+    @include mq(mobile) {
+      height: 24vw;
+      width: 42vw;
+    }
+
+    &:hover {
+      transition: 0.5s;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    &:first-child {
+    background-image: url('../images/anotherworks.png');
+    }
+    &:nth-child(2) {
+      background-image: url('../images/anotherworks_aw.png');
+    }
+    &:nth-child(3) {
+      background-image: url('../images/pasonatechsystems.png');
+    }
+    &:nth-child(4) {
+      background-image: url('../images/music_pc.png');
+    }
+    &:nth-child(5) {
+      background-image: url('../images/enclass.png');
+    }
+    &:nth-child(6) {
+      background-image: url('../images/portfolio4.png');
+    }
+    &:nth-child(7) {
+      background-image: url('../images/camp.png');
+    }
+    &:nth-child(8) {
+      background-image: url('../images/Portfolio.png');
+    }
+  }
+
+  @include mq(mobile) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
+}
