@@ -13,17 +13,17 @@ export function showModal(type, title, body, url, image_path, content_title, con
 	if(type === 'work') {
 
 		$(".co-modal-text").append(
-			$('<div>').addClass('work--list-modal').append(
-				$('<div>').addClass('work--list-left').append(
-					$('<img>').addClass('image--display display--pc').attr('src','assets/images/display.png'),
-					$('<img>').addClass('image--display display--sp').attr('src','assets/images/display-sp.png'),
-					$('<div>').addClass('image--pc').append(
-						$('<img>').addClass('image--scroll').attr('src','assets/images/' + image_path)
+			$('<div>').addClass('work__list').append(
+				$('<div>').addClass('work__list--left').append(
+					$('<img>').addClass('display__image display__image--pc').attr('src','assets/images/display.png'),
+					$('<img>').addClass('display__image display__image--sp').attr('src','assets/images/display-sp.png'),
+					$('<div>').addClass('display__image-site').append(
+						$('<img>').addClass('display__image-scroll').attr('src','assets/images/' + image_path)
 					)
 				),
-				$('<div>').addClass('work--list-right').append(
-					$('<p>').addClass('work--list-title').text(content_title),
-					$('<p>').addClass('work--list-detail').append(
+				$('<div>').addClass('work__list--right').append(
+					$('<p>').addClass('work__list-title').text(content_title),
+					$('<p>').addClass('work__list-detail').append(
 						$('<a>').attr('href',url).attr('target','_blank').text(url),
 						$('<p>').html(content_text)
 					)

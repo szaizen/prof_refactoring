@@ -2,6 +2,9 @@
 /* 色 */
 @import 'color';
 
+/* メディアクエリ */
+@import 'mq';
+
 /* 文字 */
 @import './font';
 
@@ -16,7 +19,3 @@
 
 /* 標準スタイル */
 @import './style';
-
-/* メディアクエリ */
-@import './tablet';
-@import './smartphone';

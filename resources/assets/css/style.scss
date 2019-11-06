@@ -1,10 +1,5 @@
 
 
-.menu {
-  position: fixed;
-  top: 10px;
-}
-
 /*************************************
 *   スライド1枚目
 *   作品リスト
@@ -14,105 +9,173 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 16px;
   grid-row-gap: 22px;
-}
-.grid-item {
-  background-color: $color-white;
-  height: 12vw;
-  width: 19vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  cursor: pointer;
-}
-.grid-item:hover {
-  transition: 0.5s;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-.grid-item:first-child {
-  background-image: url('../images/anotherworks.png');
-}
-.grid-item:nth-child(2) {
-  background-image: url('../images/anotherworks_aw.png');
-}
-.grid-item:nth-child(3) {
-  background-image: url('../images/pasonatechsystems.png');
-}
-.grid-item:nth-child(4) {
-  background-image: url('../images/music_pc.png');
-}
-.grid-item:nth-child(5) {
-  background-image: url('../images/enclass.png');
-}
-.grid-item:nth-child(6) {
-  background-image: url('../images/portfolio4.png');
-}
-.grid-item:nth-child(7) {
-  background-image: url('../images/camp.png');
-}
-.grid-item:nth-child(8) {
-  background-image: url('../images/Portfolio.png');
+
+  &__item {
+    background-color: $color-white;
+    height: 12vw;
+    width: 19vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    cursor: pointer;
+
+    @include mq(mobile) {
+      height: 24vw;
+      width: 42vw;
+    }
+
+    &:hover {
+      transition: 0.5s;
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    &:first-child {
+    background-image: url('../images/anotherworks.png');
+    }
+    &:nth-child(2) {
+      background-image: url('../images/anotherworks_aw.png');
+    }
+    &:nth-child(3) {
+      background-image: url('../images/pasonatechsystems.png');
+    }
+    &:nth-child(4) {
+      background-image: url('../images/music_pc.png');
+    }
+    &:nth-child(5) {
+      background-image: url('../images/enclass.png');
+    }
+    &:nth-child(6) {
+      background-image: url('../images/portfolio4.png');
+    }
+    &:nth-child(7) {
+      background-image: url('../images/camp.png');
+    }
+    &:nth-child(8) {
+      background-image: url('../images/Portfolio.png');
+    }
+  }
+
+  @include mq(mobile) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
 }
 
-.work--list-modal {
+.work__list {
   text-align: center;
   height: 90%;
-}
-.work--list-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-}
-.work--list-detail {
-  align-self: center;
-  margin: 0;
-  font-size: 14px;
+
+  &--left {
+    position: relative;
+    width: 480px;
+    margin: 0 auto 15px;
+
+    @include mq(tablet) {
+      width: 492px;
+    }
+
+    @include mq(mobile) {
+      width: 179px;
+    }
+
+  }
+  &-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+
+    @include mq(mobile) {
+      font-size: 15px;
+    }
+
+  }
+  &-detail {
+    align-self: center;
+    margin: 0;
+    font-size: 14px;
+
+    @include mq(mobile) {
+      font-size: 13px;
+    }
+
+  }
+
 }
 
 .p-section__text img {
   width: 90%;
 }
-.work--list-left {
-  position: relative;
-  width: 480px;
-  margin: 0 auto 15px;
-}
-.image--pc {
-  position: absolute;
-  top: 25px;
-  left: 29px;
-  width: 424px;
-  overflow-y: scroll;
-  height: 245px;
-}
-.image--display {
-  width: 100%;
-}
-.image--scroll {
-  width: 100%;
-}
-.display--sp {
-  display: none;
-}
 
-/* スクロールバー */
+.display__image {
+  width: 100%;
 
-.image--pc::-webkit-scrollbar{
-  width: 12px;
-}
-.image--pc::-webkit-scrollbar-track{
-  background: $color-white;
-  border: none;
-  border-radius: 10px;
-  box-shadow: inset 0 0 2px #777;
-}
-.image--pc::-webkit-scrollbar-thumb{
-  background: #aaa;
-  border-radius: 5px;
-  box-shadow: none;
+  &-site {
+    position: absolute;
+    top: 25px;
+    left: 29px;
+    width: 424px;
+    overflow-y: scroll;
+    height: 245px;
+
+    @include mq(tablet) {
+      width: 441px;
+      top: 25px;
+      left: 26px;
+      height: 256px;
+    }
+
+    @include mq(mobile) {
+      width: 160px;
+      top: 43px;
+      left: 10px;
+      height: 252px;
+    }
+
+  }
+
+  &--pc {
+
+    @include mq(mobile) {
+      display: none;
+    }
+
+    /* スクロールバー */
+    &::-webkit-scrollbar{
+      width: 12px;
+    }
+    &::-webkit-scrollbar-track{
+      background: $color-white;
+      border: none;
+      border-radius: 10px;
+      box-shadow: inset 0 0 2px #777;
+    }
+    &::-webkit-scrollbar-thumb{
+      background: #aaa;
+      border-radius: 5px;
+      box-shadow: none;
+    }
+  }
+
+  &--sp {
+
+    display: none;
+
+    @include mq(mobile) {
+      display: block;
+    }
+
+  }
+
+  &-scroll {
+    width: 100%;
+  }
+
 }
 
 
@@ -160,10 +223,19 @@
 .js-box {
   text-align: center;
   margin: 20px 0;
+
+  @include mq(mobile) {
+    margin: 0;
+  }
 }
 .js-box-item {
   float: left;
   margin: 0 10px;
+
+  @include mq(tablet) {
+    float: none;
+    margin: 0 10px;
+  }
 }
 .js-box button {
   outline: none;
@@ -180,6 +252,12 @@
   opacity: 1;
   background-color: $color-white;
   border: 1px solid rgba(22, 76, 167, 0.6);
+
+  @include mq(mobile) {
+    height: 38px;
+    margin: 7px auto;
+  }
+
 }
 .js-box button span {
   color: #164ca7;

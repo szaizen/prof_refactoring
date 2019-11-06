@@ -1,0 +1,15 @@
+@mixin mq($media-type) {
+
+  @if $media-type == mobile {
+    @media screen and (max-width: 599px) {
+      @content;
+    }
+  }
+
+  @if $media-type == tablet {
+    @media screen and (max-width: 800px) {
+      @content;
+    }
+  }
+
+}
