@@ -16,7 +16,7 @@
   grid-row-gap: 22px;
 }
 .grid-item {
-  background-color: white;
+  background-color: $color-white;
   height: 12vw;
   width: 19vw;
   background-size: cover;
@@ -104,7 +104,7 @@
   width: 12px;
 }
 .image--pc::-webkit-scrollbar-track{
-  background: #fff;
+  background: $color-white;
   border: none;
   border-radius: 10px;
   box-shadow: inset 0 0 2px #777;
@@ -136,19 +136,19 @@
 }
 /* icon色 */
 .fa-html5 {
-  color: #E54B21;
+  color: $color-icon-html;
 }
 .fa-css3-alt {
-  color: #0270BA;
+  color: $color-icon-css;
 }
 .fa-java {
-  color: #0273BB;
+  color: $color-icon-java;
 }
 .fa-salesforce {
-  color: #03A1E0;
+  color: $color-icon-salesforce;
 }
 .fa-js-square {
-  color: #FFDA3E;
+  color: $color-icon-square;
 }
 
 /*************************************
@@ -178,7 +178,7 @@
   margin: 15px auto;
   width: 210px;
   opacity: 1;
-  background-color: #ffffff;
+  background-color: $color-white;
   border: 1px solid rgba(22, 76, 167, 0.6);
 }
 .js-box button span {
