@@ -32,30 +32,6 @@
       transform: scale(1.1);
     }
 
-    &:first-child {
-    background-image: url('../images/anotherworks.png');
-    }
-    &:nth-child(2) {
-      background-image: url('../images/anotherworks_aw.png');
-    }
-    &:nth-child(3) {
-      background-image: url('../images/pasonatechsystems.png');
-    }
-    &:nth-child(4) {
-      background-image: url('../images/music_pc.png');
-    }
-    &:nth-child(5) {
-      background-image: url('../images/enclass.png');
-    }
-    &:nth-child(6) {
-      background-image: url('../images/portfolio4.png');
-    }
-    &:nth-child(7) {
-      background-image: url('../images/camp.png');
-    }
-    &:nth-child(8) {
-      background-image: url('../images/Portfolio.png');
-    }
   }
 
   @include mq(mobile) {
