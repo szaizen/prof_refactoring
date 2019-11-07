@@ -1,0 +1,14 @@
+
+/*===============================
+  codepen調整用
+================================*/
+
+.cp_embed_wrapper {
+  height: 90%;
+  @include mq(mobile) {
+    height: 80%;
+  }
+}
+.cp_embed_wrapper iframe {
+  height: 100%;
+}

@@ -6,13 +6,13 @@
 
 export function showModal(type, title, body, url, image_path, content_title, content_text){
 	//if($(".co-modal-overlay")[0]) return false ;//新しくモーダルウィンドウを起動しない
-	$(".co-modal-title").text(title);
+	$(".modal__content-title").text(title);
 
-	$(".co-modal-text").html('');
+	$(".modal__content-text").html('');
 
 	if(type === 'work') {
 
-		$(".co-modal-text").append(
+		$(".modal__content-text").append(
 			$('<div>').addClass('work__list').append(
 				$('<div>').addClass('work__list--left').append(
 					$('<img>').addClass('display__image display__image--pc').attr('src','assets/images/display.png'),
@@ -32,7 +32,7 @@ export function showModal(type, title, body, url, image_path, content_title, con
 		);
 
 	} else if (type === 'js') {
-		$(".co-modal-text").html(body);
+		$(".modal__content-text").html(body);
 	}
 
 
@@ -53,8 +53,8 @@ export function showModal(type, title, body, url, image_path, content_title, con
   </div>
 */
 
-	$(".co-modal-overlay").fadeIn();
-	$(".co-modal-content").fadeIn();
+	$(".modal__overlay").fadeIn();
+	$(".modal__content").fadeIn();
   centeringModal();
 
 };
@@ -62,7 +62,7 @@ export function showModal(type, title, body, url, image_path, content_title, con
 
 //モーダル中央寄せ（中央の位置を計算してleftとTopを設定する）
 export function centeringModal(){
-	var pxleft = (($(window).width() - $(".co-modal-content").outerWidth()) / 2);
-	var pxtop = (($(window).height() - $(".co-modal-content").outerHeight()) / 2);
-	$(".co-modal-content").css({"left": pxleft + "px"}).css({"top": pxtop + "px"});
+	var pxleft = (($(window).width() - $(".modal__content").outerWidth()) / 2);
+	var pxtop = (($(window).height() - $(".modal__content").outerHeight()) / 2);
+	$(".modal__content").css({"left": pxleft + "px"}).css({"top": pxtop + "px"});
 }

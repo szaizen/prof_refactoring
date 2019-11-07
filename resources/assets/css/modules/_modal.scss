@@ -3,16 +3,7 @@
   モーダル用
 ================================*/
 
-.cp_embed_wrapper {
-  height: 90%;
-}
-.cp_embed_wrapper iframe {
-  height: 100%;
-}
-.co-modal-text {
-  height: 90%;
-}
-.co-modal-content{
+.modal__content{
   text-align: center;
   width:85%;
   padding: 10px;
@@ -21,8 +12,19 @@
   position:fixed;
   display: none;
   height: 90%;
+
+  &-text {
+    height: 90%;
+  }
+
+  &-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
 }
-.co-modal-overlay {
+
+.modal__overlay {
   z-index:10;
   display:none;
   position:fixed;
@@ -32,7 +34,7 @@
   height:120%;
   background-color:rgba(0,0,0,0.75);
 }
-.co-modal-close_icon {
+.modal__close-icon {
   position: absolute;
   top: -20px;
   right: -20px;
@@ -45,43 +47,28 @@
   border-radius: 50px;
   box-shadow: 2px 2px 4px #333;
   cursor:pointer;
-}
-.co-modal-close_icon:before,
-.co-modal-close_icon:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  height: 23px;
-  width: 5px;
-  background: #fff;
-  border-radius: 10px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-}
-.co-modal-close_icon:after {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-.co-modal-close_icon:hover {
-  cursor:pointer;
-  color:#f00;
-  text-decoration: none;
-}
-.co-modal-title {
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
 
-@media (max-width: 599px) {
-  .cp_embed_wrapper {
-    height: 80%;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    height: 23px;
+    width: 5px;
+    background: #fff;
+    border-radius: 10px;
+    transform: rotate(-45deg);
   }
-  .cp_embed_wrapper iframe {
-    height: 100%;
+
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    cursor:pointer;
+    color:#f00;
+    text-decoration: none;
   }
 }

@@ -1,50 +1,8 @@
 
 /*===============================
-  1ページ目
-  作品集のレイアウトなど
+  モーダル内
+  display画像調整
 ================================*/
-	
-.work__list {
-  text-align: center;
-  height: 90%;
-
-  &--left {
-    position: relative;
-    width: 480px;
-    margin: 0 auto 15px;
-
-    @include mq(tablet) {
-      width: 492px;
-    }
-
-    @include mq(mobile) {
-      width: 179px;
-    }
-
-  }
-  &-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-
-    @include mq(mobile) {
-      font-size: 15px;
-    }
-
-  }
-  &-detail {
-    align-self: center;
-    margin: 0;
-    font-size: 14px;
-
-    @include mq(mobile) {
-      font-size: 13px;
-    }
-
-  }
-
-}
-
 
 .display__image {
   width: 100%;
