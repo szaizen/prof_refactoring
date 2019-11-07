@@ -3,7 +3,7 @@
   1ページ目
   作品集のレイアウトなど
 ================================*/
-	
+
 .work__list {
   text-align: center;
   height: 90%;
@@ -41,78 +41,6 @@
       font-size: 13px;
     }
 
-  }
-
-}
-
-
-.display__image {
-  width: 100%;
-
-  &-site {
-    position: absolute;
-    top: 25px;
-    left: 29px;
-    width: 424px;
-    overflow-y: scroll;
-    height: 245px;
-
-    @include mq(tablet) {
-      width: 441px;
-      top: 25px;
-      left: 26px;
-      height: 256px;
-    }
-
-    @include mq(mobile) {
-      width: 160px;
-      top: 43px;
-      left: 10px;
-      height: 252px;
-    }
-
-  }
-
-  .p-section__text img {
-    width: 90%;
-  }
-
-
-  &--pc {
-
-    @include mq(mobile) {
-      display: none;
-    }
-
-    /* スクロールバー */
-    &::-webkit-scrollbar{
-      width: 12px;
-    }
-    &::-webkit-scrollbar-track{
-      background: $color-white;
-      border: none;
-      border-radius: 10px;
-      box-shadow: inset 0 0 2px #777;
-    }
-    &::-webkit-scrollbar-thumb{
-      background: #aaa;
-      border-radius: 5px;
-      box-shadow: none;
-    }
-  }
-
-  &--sp {
-
-    display: none;
-
-    @include mq(mobile) {
-      display: block;
-    }
-
-  }
-
-  &-scroll {
-    width: 100%;
   }
 
 }
